@@ -13,3 +13,5 @@ jobs:
         with:
           node-version: '22'
       - run: npm test
+
+# Verify matcher tests for the portfolio prototype.
