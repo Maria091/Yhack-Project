@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7faf7">
+  <meta name="description" content="CivicLink is a hackathon-style fictional community resource matching prototype.">
+  <title>CivicLink · Community Resource Matcher</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="header"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✳</span>CivicLink<span class="brand-dot">.</span></a><span class="header-detail">A civic technology concept</span><a class="source" href="https://github.com/Maria091/Yhack-Project" target="_blank" rel="noreferrer">Source code ↗</a></header>
+    <main>
+      <section class="hero" aria-labelledby="headline"><div class="hero-copy"><p class="eyebrow">SMALL CONNECTIONS. MEANINGFUL IMPACT.</p><h1 id="headline">Finding support<br>should feel <em>simpler.</em></h1><p>Discover how transparent, explainable technology could match community needs to the right types of resources.</p><div class="hero-tags"><span>✳ Explainable matches</span><span>✳ Privacy-first demo</span><span>✳ Zero sign-up</span></div></div><div class="hero-illustration" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-symbol">✳</div><div class="float-tag tag-one">Food</div><div class="float-tag tag-two">Housing</div><div class="float-tag tag-three">Learning</div></div></section>
+      <div class="notice" role="note"><strong>Prototype using fictional data:</strong> The sample programs below are not real services. Do not rely on this demo for emergency assistance, health, housing or transportation needs.</div>
+      <section class="matcher" id="explore" aria-labelledby="match-title"><div class="section-heading"><div><p class="eyebrow">RESOURCE FINDER</p><h2 id="match-title">What kind of support are you exploring?</h2><p>Choose your preferences to see how transparent matching works.</p></div></div>
+        <form id="match-form" class="filters">
+          <div class="field"><label for="category">Resource type</label><select id="category" name="category"></select></div>
+          <div class="field"><label for="city">City</label><select id="city" name="city"><option value="any">Any city</option><option value="Dallas">Dallas</option><option value="Austin">Austin</option><option value="Houston">Houston</option></select></div>
+          <div class="field"><label for="audience">Audience</label><select id="audience" name="audience"><option value="all">Everyone</option><option value="students">Students</option><option value="families">Families</option><option value="seniors">Seniors</option></select></div>
+          <div class="check-field"><label for="urgent"><input id="urgent" name="urgent" type="checkbox"><span>Prefer immediate availability</span></label></div>
+          <div class="filter-actions"><button class="primary" type="submit">Find sample matches <span aria-hidden="true">↗</span></button><button class="reset" id="reset" type="button">Clear filters</button></div>
+        </form>
+        <div class="results-heading"><div><p class="eyebrow">MATCHED PROGRAMS</p><h2 id="result-count" role="status" aria-live="polite">Explore sample resources</h2></div><p class="sort-label">Ranked by transparent criteria</p></div>
+        <div id="results" class="results"></div>
+      </section>
+      <section class="how"><p class="eyebrow">BEHIND THE SCENES</p><h2>Built around clarity, not a black box.</h2><div class="how-grid"><article><span>01</span><h3>Understand the need</h3><p>Collect a service category and broad preferences. No identifying details are required.</p></article><article><span>02</span><h3>Rank, don't guess</h3><p>Match fictional resources with documented filters and a deterministic scoring function.</p></article><article><span>03</span><h3>Explain every match</h3><p>Show each reason and capacity label openly, rather than hiding the matching process.</p></article></div></section>
+    </main>
+    <footer><span>CivicLink · Portfolio concept · Fictional resources only</span><span>Built with vanilla JavaScript and thoughtful UX</span></footer>
+  </div>
+</body>
+</html>
